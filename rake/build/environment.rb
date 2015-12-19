@@ -66,9 +66,9 @@ pipeopts 'st2' do
   # st2 packages are not standalone (ie. there are many $gitdir/st2*)
   standalone false
   checkout :st2
-  envpass :giturl,   'https://github.com/StackStorm/st2', from: 'ST2_GITURL'
-  envpass :gitrev,   'master',                            from: 'ST2_GITREV'
-  envpass :gitdir,    make_tmpname('st2-'),               from: 'ST2_GITDIR'
+  envpass :giturl,   'https://github.com/DoriftoShoes/st2', from: 'ST2_GITURL'
+  envpass :gitrev,   'master',                              from: 'ST2_GITREV'
+  envpass :gitdir,    make_tmpname('st2-'),                 from: 'ST2_GITDIR'
   envpass :st2pkg_version
   envpass :st2pkg_release, 1
 end
